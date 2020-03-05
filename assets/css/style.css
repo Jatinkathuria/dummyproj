@@ -1,0 +1,110 @@
+.splash-screen-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: yellow;
+  align-items: center;
+  justify-content: center;
+  transition: 0.4s ease-in-out all;
+}
+.splash-screen-wrapper img {
+  max-width: 60px;
+  width: 100%;
+}
+.splash-screen-wrapper span {
+  height: 0px;
+  width: 0px;
+  font-size: 0px;
+  font-weight: bold;
+  transition: 0.3s ease-in-out all;
+}
+.splash-screen-wrapper.scrolled {
+  background-color: #fff;
+}
+.splash-screen-wrapper.scrolled img {
+  max-width: 35px;
+  margin-bottom: 5px;
+}
+.splash-screen-wrapper.scrolled span {
+  height: auto;
+  width: auto;
+  font-size: 22px;
+}
+
+.page-slides {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: -100%;
+  transition: 0.3s ease-in-out;
+  background-color: #fff;
+  top: 0;
+}
+.page-slides.visible {
+  right: 0;
+}
+.page-slides .swiper-slide .main-banner {
+  min-height: 50vh;
+  background-size: cover;
+  background-position: center;
+}
+.page-slides .swiper-slide .under-banner-text {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  padding: 50px 23px;
+}
+.page-slides .swiper-slide .under-banner-text .highlighter {
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, #ffde3d 50%);
+  background-size: 200%;
+  background-position: 0 0;
+  padding: 0 6px;
+  transition: 0.6s ease-out;
+}
+.page-slides .swiper-slide .under-banner-text .highlighter.isActive {
+  background-position: -100% 0;
+}
+.page-slides footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  background-color: #fff;
+  z-index: 9;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+.page-slides footer .skip-link {
+  position: absolute;
+  z-index: 19;
+  left: 10px;
+}
+.page-slides footer .skip-link a {
+  font-size: 14px;
+  color: #7d7d7d;
+}
+.page-slides footer .page-link {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+}
+.page-slides footer .page-link ul {
+  margin: 0px;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  padding: 0px;
+}
+.page-slides footer .page-link ul li {
+  list-style: none;
+  display: inline-block;
+}
+.page-slides footer .page-link ul li a {
+  height: 7px;
+  width: 7px;
+  background: grey;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+/*# sourceMappingURL=style.css.map */
